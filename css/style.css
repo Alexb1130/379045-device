@@ -1,0 +1,11 @@
+body .total-title, .item-title {
+	font-size: 47px;
+	line-height: 32px;
+	color: #000000;
+	font-weight: 700;
+	font-family: Gilroy;
+}
+
+body .item-title {
+	font-size: 18px;
+}
