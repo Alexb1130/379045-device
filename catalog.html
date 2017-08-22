@@ -90,7 +90,17 @@
   			<form action="#" method="post" class="left-filter">
   				<fieldset>
   					<legend>Стоимость</legend>
-  					<!-- тут должны быть ползунки, пока не сообразил как лучше сделать -->
+  					   <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="selected-price">
+                <span>от 0</span>
+                <span>до 5000</span>
+              </div>
   				</fieldset>
   				<fieldset>
   					<legend>Цвет</legend>
@@ -119,7 +129,7 @@
   							<input type="radio" id="no" name="radio" checked> Нет
   						</label>
   				</fieldset>
-  				<button class="global-btn">
+  				<button type="submit" class="global-btn">
   					Показать
   				</button>
   			</form>
@@ -133,8 +143,8 @@
   						<span class="item-price">500р</span>
   					</div>
   					<div class="item-btn">
-  						<button class="global-btn">В корзину</button>
-  						<button class="add-btn">Добавить к сравнению</button>
+  						<button type="submit" class="global-btn">В корзину</button>
+  						<button type="submit" class="add-btn">Добавить к сравнению</button>
   					</div>
   				</article>
   				<article class="products-item">
@@ -146,8 +156,8 @@
   						<span class="item-price">1500р</span>
   					</div>
   					<div class="item-btn">
-  						<button class="global-btn">В корзину</button>
-  						<button class="add-btn">Добавить к сравнению</button>
+  						<button type="submit" class="global-btn">В корзину</button>
+  						<button type="submit" class="add-btn">Добавить к сравнению</button>
   					</div>
   				</article>
   				<article class="products-item">
@@ -159,8 +169,8 @@
   						<span class="item-price">2 500 руб.</span>
   					</div>
   					<div class="item-btn">
-  						<button class="global-btn">В корзину</button>
-  						<button class="add-btn">Добавить к сравнению</button>
+  						<button type="submit" class="global-btn">В корзину</button>
+  						<button type="submit" class="add-btn">Добавить к сравнению</button>
   					</div>
   				</article>
   				<article class="products-item">
@@ -172,8 +182,8 @@
   						<span class="item-price">4 900 руб.</span>
   					</div>
   					<div class="item-btn">
-  						<button class="global-btn">В корзину</button>
-  						<button class="add-btn">Добавить к сравнению</button>
+  						<button type="submit" class="global-btn">В корзину</button>
+  						<button type="submit" class="add-btn">Добавить к сравнению</button>
   					</div>
   				</article>
   				<section class="forward-backward-btn">
