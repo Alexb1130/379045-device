@@ -90,17 +90,13 @@
   			<form action="#" method="post" class="left-filter">
   				<fieldset>
   					<legend>Стоимость</legend>
-  					   <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
-              </div>
-              <div class="selected-price">
-                <span>от 0</span>
-                <span>до 5000</span>
-              </div>
+  					 <input type="range" id="range" name="range" min="0" max="5000" step="1">
+             <label for="min-num">от 0
+                <input type="number" name="num" id="min-num" min="0" max="" value="0">
+             </label>
+             <label for="max-num"> до 5000
+                <input type="number" name="num" id="max-num" min="" max="5000" value="5000">
+             </label>
   				</fieldset>
   				<fieldset>
   					<legend>Цвет</legend>
@@ -129,7 +125,7 @@
   							<input type="radio" id="no" name="radio" checked> Нет
   						</label>
   				</fieldset>
-  				<button type="submit" class="global-btn">
+  				<button type="button" class="global-btn">
   					Показать
   				</button>
   			</form>
@@ -143,8 +139,8 @@
   						<span class="item-price">500р</span>
   					</div>
   					<div class="item-btn">
-  						<button type="submit" class="global-btn">В корзину</button>
-  						<button type="submit" class="add-btn">Добавить к сравнению</button>
+  						<button type="button" class="global-btn">В корзину</button>
+  						<button type="button" class="add-btn">Добавить к сравнению</button>
   					</div>
   				</article>
   				<article class="products-item">
@@ -156,8 +152,8 @@
   						<span class="item-price">1500р</span>
   					</div>
   					<div class="item-btn">
-  						<button type="submit" class="global-btn">В корзину</button>
-  						<button type="submit" class="add-btn">Добавить к сравнению</button>
+  						<button type="button" class="global-btn">В корзину</button>
+  						<button type="button" class="add-btn">Добавить к сравнению</button>
   					</div>
   				</article>
   				<article class="products-item">
@@ -169,11 +165,11 @@
   						<span class="item-price">2 500 руб.</span>
   					</div>
   					<div class="item-btn">
-  						<button type="submit" class="global-btn">В корзину</button>
-  						<button type="submit" class="add-btn">Добавить к сравнению</button>
+  						<button type="button" class="global-btn">В корзину</button>
+  						<button type="button" class="add-btn">Добавить к сравнению</button>
   					</div>
   				</article>
-  				<article class="products-item">
+  				<article class="products-item new">
   					<img src="img/item-4.png" width="360" height="380" alt="">
   					<div class="item-name">
   						<h3 class="item-title">
@@ -182,8 +178,8 @@
   						<span class="item-price">4 900 руб.</span>
   					</div>
   					<div class="item-btn">
-  						<button type="submit" class="global-btn">В корзину</button>
-  						<button type="submit" class="add-btn">Добавить к сравнению</button>
+  						<button type="button" class="global-btn">В корзину</button>
+  						<button type="button" class="add-btn">Добавить к сравнению</button>
   					</div>
   				</article>
   				<section class="forward-backward-btn">
