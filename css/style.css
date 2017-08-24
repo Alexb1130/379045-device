@@ -1,0 +1,28 @@
+body {
+  font-family: "Open Sans", "Arial",sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+
+.total-title {
+  font-family: "Gilroy" ,sans-serif;
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #000000;
+}
+
+.item-title {
+  font-family: "Gilroy" ,sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 12px;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
