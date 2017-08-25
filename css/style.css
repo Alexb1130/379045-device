@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Gilroy Light";
+    src: url("../fonts/gilroylight.woff2") format("woff2");
+    src: url("../fonts/gilroylight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: "Open Sans", "Arial",sans-serif;
   font-size: 15px;
