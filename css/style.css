@@ -1,9 +1,4 @@
 @font-face {
-<<<<<<< HEAD
-  font-family: "Gilroy Light";
-    src: url("../fonts/gilroylight.woff2") format("woff2");
-    src: url("../fonts/gilroylight.woff") format("woff");
-=======
   font-family: "Gilroy";
     src: url("../fonts/gilroylight.woff2") format("woff2");
     src: url("../fonts/gilroylight.woff") format("woff");
@@ -23,13 +18,11 @@
   font-family: "Open Sans";
     src: url("../fonts/opensans.woff2") format("woff2");
     src: url("../fonts/opensans.woff") format("woff");
->>>>>>> 55745180e3459c89fd29247f49ba0aad95677511
+
   font-weight: normal;
   font-style: normal;
 }
 
-<<<<<<< HEAD
-=======
 @font-face {
   font-family: "Open Sans";
     src: url("../fonts/opensanslight.woff2") format("woff2");
@@ -38,7 +31,6 @@
   font-style: normal;
 }
 
->>>>>>> 55745180e3459c89fd29247f49ba0aad95677511
 body {
   font-family: "Open Sans", "Arial",sans-serif;
   font-size: 15px;
@@ -53,6 +45,7 @@ body {
   font-size: 47px;
   font-weight: 700;
   line-height: 60px;
+  letter-spacing: 0.17px;
   color: #000000;
 }
 
@@ -84,14 +77,6 @@ a.logo {
   text-transform: uppercase;
   position: absolute;
   top: -12px
-}
-
-a.footer-logo {
-  font-family: "Gilroy" ,sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffc600;
 }
 
 .container {
@@ -186,6 +171,7 @@ form.site-search::after {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
 
 .header-flex {
@@ -256,6 +242,7 @@ form.site-search::after {
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
+  letter-spacing: 3.6px;
 }
 
 .main-nav {
@@ -284,7 +271,7 @@ form.site-search::after {
   opacity: 0.3;
   top: 0;
   bottom: 0;
-  left: 175px;
+  right: -25px;
   margin: auto;
 }
 
@@ -300,6 +287,14 @@ form.site-search::after {
   padding: 10px 0;
 }
 
+.drop-down-ls li:last-child {
+  flex-basis: 280px;
+}
+
+.drop-down-ls li:nth-child(5) {
+  margin: 0 auto 0 75px;
+}
+
 .slide-one, .slide-two, .slide-three {
   display: flex;
 }
@@ -312,8 +307,103 @@ form.site-search::after {
   display: flex;
 }
 
+.slider-services-backroung {
+  background-color: #e5e5e5;
+}
+
 
 
 .footer {
   background-color: #464646;
+  position: relative;
+  padding:50px 0;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+
+a.footer-logo {
+  font-family: "Gilroy" ,sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffc600;
+}
+
+.footer-user-block {
+  display: flex;
+  max-width: 1139px;
+}
+
+.footer-user-block .footer-logo {
+  margin-right: auto;
+}
+
+.footer-user-block .enter,
+.compare, .cart {
+  padding-left: 60px;
+}
+
+.footer .footer-info {
+  display: flex;
+  justify-content: center;
+  padding:40px 0;
+}
+
+.footer-info address {
+  font-style: normal;
+  margin-right: auto;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.footer-info .phone {
+  margin-left: auto;
+  font-weight: 300;
+}
+
+.footer-info a:nth-child(2) {
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+.footer-info a:nth-child(3) {
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  padding: 0 30px;
+}
+.footer-info a:nth-child(4) {
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.footer .social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .social a:nth-child(2) {
+  padding: 0 20px;
+}
+
+.footer .social a {
+  opacity: 0.3;
+}
+
+.footer .social a:hover {
+  opacity: 0.6;
+}
+
+.footer .social a:active {
+  opacity: 0.1;
 }
