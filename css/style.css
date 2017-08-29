@@ -52,7 +52,7 @@ body {
   font-family: "Gilroy" ,sans-serif;
   font-size: 47px;
   font-weight: 700;
-  line-height: 34px;
+  line-height: 60px;
   color: #000000;
 }
 
@@ -82,8 +82,8 @@ a.logo {
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
-  display: inline-block;
-  margin-top: -18px;
+  position: absolute;
+  top: -12px
 }
 
 a.footer-logo {
@@ -91,9 +91,7 @@ a.footer-logo {
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
-  display: inline-block;
   color: #ffc600;
-  margin-top: -18px;
 }
 
 .container {
@@ -106,7 +104,7 @@ a.footer-logo {
   background-color: #f7e296;
   margin-top: 40px;
   max-width: 1040px;
-  min-height: 300px;
+  position: relative;
   padding:0 60px;
 }
 
@@ -194,6 +192,7 @@ form.site-search::after {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 .user-block {
@@ -220,7 +219,9 @@ form.site-search::after {
   background-image: url(../img/user.svg);
   width: 13px;
   height: 12px;
-  top: 7px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   right: 50px
 }
 
@@ -230,7 +231,9 @@ form.site-search::after {
   background-image: url(../img/compare.svg);
   width: 10px;
   height:10px;
-  top: 7px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   right: 142px;
 }
 
@@ -240,7 +243,9 @@ form.site-search::after {
   background-image: url(../img/cart.svg);
   width: 12px;
   height: 12px;
-  top: 7px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   right: 66px;
 }
 
@@ -250,6 +255,7 @@ form.site-search::after {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  position: relative;
 }
 
 .main-nav {
@@ -261,7 +267,8 @@ form.site-search::after {
 .main-nav .header-info {
   display: flex;
   justify-content: space-between;
-  min-width: 520px;
+  width: 520px;
+  height: 0;
 }
 
 .main-nav .header-info a:last-child {
@@ -275,9 +282,34 @@ form.site-search::after {
   width: 16px;
   height: 16px;
   opacity: 0.3;
-  margin-left: 10px;
-  margin-top: 3px;
+  top: 0;
+  bottom: 0;
+  left: 175px;
+  margin: auto;
+}
 
+.drop-down-ls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 520px;
+  margin: 30px 0;
+}
+
+.drop-down-ls li {
+  padding: 10px 0;
+}
+
+.slide-one, .slide-two, .slide-three {
+  display: flex;
+}
+
+.product-category {
+  display: flex;
+}
+
+.contact-inform {
+  display: flex;
 }
 
 
