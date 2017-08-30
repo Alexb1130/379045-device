@@ -89,6 +89,7 @@ a.logo {
   background-color: #f7e296;
   margin-top: 40px;
   max-width: 1040px;
+  min-height: 350px;
   position: relative;
   padding:0 60px;
 }
@@ -249,6 +250,7 @@ form.site-search::after {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .main-nav .header-info {
@@ -294,6 +296,18 @@ form.site-search::after {
 .drop-down-ls li:nth-child(5) {
   margin: 0 auto 0 75px;
 }
+
+.drop-down-ls {
+  display: none;
+}
+
+.main-nav-ls:hover .drop-down-ls {
+  display: flex;
+  z-index: 10;
+  background-color: #f7e296;
+
+}
+
 
 .slide-one, .slide-two, .slide-three {
   display: flex;
