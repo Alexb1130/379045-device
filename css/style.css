@@ -259,7 +259,7 @@ form.site-search::after {
 }
 
 .main-nav .header-info a:last-child {
-  margin-left: 111px;
+  margin:0 -4px 0 50px;
 }
 
 .main-nav-ls .main-nav-ls-title::after {
@@ -310,8 +310,6 @@ form.site-search::after {
 .slider-services-backroung {
   background-color: #e5e5e5;
 }
-
-
 
 .footer {
   background-color: #464646;
@@ -406,4 +404,83 @@ a.footer-logo {
 
 .footer .social a:active {
   opacity: 0.1;
+}
+
+.products-catalog {
+  padding-left: 120px;
+}
+
+.products-catalog .total-title {
+
+}
+
+.products-catalog .bread-crumds li {
+  display: inline-block;
+  padding-right: 40px;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  font-weight: 300;
+
+}
+
+.main-filter {
+    /*background: #ebebeb;*/
+    /*background: linear-gradient(to right,#dbdbdb 0%,#dbdbdb 49%,#ebebeb 50%,#ebebeb 100%);*/
+}
+
+.main-filter .filter-title {
+  display: flex;
+  align-items: center;
+  padding-left: 120px;
+  justify-content: space-between;
+}
+
+.filter-title ul {
+  display: flex;
+}
+
+.main-filter .left-filter {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 51px;
+}
+
+.left-filter fieldset {
+  border: none;
+}
+
+.main-flex {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: auto;
+}
+
+
+.products-ls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.forward-backward-btn {
+  flex-basis: 100%;
+}
+
+.forward-backward-btn .catalog-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 50px 0;
+  background: #ebebeb;
+}
+
+.catalog-nav li:first-child {
+  margin-right: auto;
+}
+
+.catalog-nav li:last-child {
+  margin-left: auto;
 }
