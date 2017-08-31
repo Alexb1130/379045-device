@@ -315,6 +315,45 @@ form.site-search::after {
 
 .product-category {
   display: flex;
+  justify-content: space-between;
+}
+
+.product-category .product-type {
+  flex-basis: 160px;
+}
+
+.product-type .img-box {
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .2s;
+}
+
+.product-type .monopod img {
+  align-self: flex-end;
+}
+
+.product-category .product-type:hover {
+  opacity: 1;
+}
+
+.product-category .img-box:hover {
+  background-color: #f0c52e;
+  opacity: 1;
+}
+
+.img-box img:active {
+  opacity: 0.3;
+}
+
+.product-type h3 {
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.18px;
 }
 
 .contact-inform {
