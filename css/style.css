@@ -94,15 +94,6 @@ a.logo {
   padding:0 60px;
 }
 
-.slide-number {
-  /*color: #ffffff;*/
-  color: #000000;
-  font-family: "Gilroy" ,sans-serif;
-  font-size: 179px;
-  font-weight: 700;
-  line-height: 179px;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -166,6 +157,8 @@ form.site-search::after {
 
 }
 
+/*стили-наброски для кнопок*/
+
 .global-btn {
   color: #000000;
   font-family: Gilroy;
@@ -173,7 +166,30 @@ form.site-search::after {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3.6px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  max-width: 160px;
 }
+
+.global-btn::before {
+  content:"";
+  position: absolute;
+  background-color: #f0c52e;
+  width: 220px;
+  height: 5px;
+  z-index: -1;
+  top:10px;
+  left: -10px;
+  transition: .2s;
+}
+
+.global-btn:hover::before {
+  height: 40px;
+  top:-8px;
+}
+
+/*стили-наброски для кнопок*/
 
 .header-flex {
     display: flex;
@@ -283,6 +299,7 @@ form.site-search::after {
   justify-content: space-between;
   max-width: 520px;
   margin: 30px 0;
+  position: absolute;
 }
 
 .drop-down-ls li {
@@ -297,6 +314,16 @@ form.site-search::after {
   margin: 0 auto 0 75px;
 }
 
+.drop-down-ls::before {
+  content: '';
+  position: absolute;
+  width: 1100px;
+  background: red;
+  height: 300px;
+  z-index: -1;
+}
+
+
 .drop-down-ls {
   display: none;
 }
@@ -304,14 +331,45 @@ form.site-search::after {
 .main-nav-ls:hover .drop-down-ls {
   display: flex;
   z-index: 10;
+  position: relative;
   background-color: #f7e296;
 
 }
 
+.drop-down-ls:focus li {
+  display: flex;
+  background-color: #f7e296;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.top-slider-switches {
+  display: none;
+}
+
+
 
 .slide-one, .slide-two, .slide-three {
   display: flex;
+  position: relative;
+  top: -135px;
+  z-index: 1;
 }
+
+.slide-number {
+  color: #ffffff;
+  /*color: #000000;*/
+  font-family: "Gilroy" ,sans-serif;
+  font-size: 179px;
+  font-weight: 700;
+  line-height: 179px;
+  position: absolute;
+  right: 0;
+}
+
+
+
 
 .product-category {
   display: flex;
