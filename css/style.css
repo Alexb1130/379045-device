@@ -79,6 +79,10 @@ a.logo {
   top: -12px
 }
 
+.index-header a.logo:hover {
+  opacity: 1;
+}
+
 .container {
   width: 85%;
   max-width: 1160px;
@@ -89,7 +93,7 @@ a.logo {
   background-color: #f7e296;
   margin-top: 40px;
   max-width: 1040px;
-  min-height: 350px;
+  min-height: 330px;
   position: relative;
   padding:0 60px;
 }
@@ -109,8 +113,9 @@ form.site-search button, input {
 form.site-search button {
   padding:13px 17px;
   border: 2px solid #000000;
-  margin-left: 150px;
   font-weight: 300;
+  margin-left: -5px;
+  visibility: hidden;
 }
 
 form.site-search button:hover {
@@ -129,7 +134,24 @@ form.site-search input {
   font-size: 15px;
   font-weight: 300;
   padding-left: 30px;
+  width: 310px;
 }
+
+form.site-search input:focus {
+    border-bottom:2px solid #000;
+    padding-bottom: 13px;
+    outline:none;
+    opacity:1;
+}
+
+form.site-search input:focus ~ button {
+    visibility: visible;
+}
+
+form.site-search button:active {
+    visibility: visible;
+}
+
 
 form.site-search {
   position: relative;
@@ -143,17 +165,6 @@ form.site-search::before {
   height: 16px;
   position: absolute;
   top: 15px;
-
-}
-
-form.site-search::after {
-  content: '';
-  position: absolute;
-  width: 340px;
-  height: 2px;
-  background: #000000;
-  top: 45px;
-  left: 0;
 
 }
 
@@ -298,8 +309,17 @@ form.site-search::after {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 520px;
-  margin: 30px 0;
+  margin: 25px 0;
+  position: relative;
+}
+
+.drop-down-ls::before {
+  content: '';
   position: absolute;
+  width: 900px;
+  background-color: #f7e296;
+  min-height: 100px;
+  z-index: -1;
 }
 
 .drop-down-ls li {
@@ -314,16 +334,6 @@ form.site-search::after {
   margin: 0 auto 0 75px;
 }
 
-.drop-down-ls::before {
-  content: '';
-  position: absolute;
-  width: 1100px;
-  background: red;
-  height: 300px;
-  z-index: -1;
-}
-
-
 .drop-down-ls {
   display: none;
 }
@@ -331,17 +341,9 @@ form.site-search::after {
 .main-nav-ls:hover .drop-down-ls {
   display: flex;
   z-index: 10;
-  position: relative;
   background-color: #f7e296;
-
-}
-
-.drop-down-ls:focus li {
-  display: flex;
-  background-color: #f7e296;
-  position: relative;
-  z-index: 10;
   cursor: pointer;
+
 }
 
 .top-slider-switches {
@@ -353,13 +355,13 @@ form.site-search::after {
 .slide-one, .slide-two, .slide-three {
   display: flex;
   position: relative;
-  top: -135px;
+  /*top: -135px;*/
   z-index: 1;
 }
 
 .slide-number {
-  color: #ffffff;
-  /*color: #000000;*/
+  /*color: #ffffff;*/
+  color: #000000;
   font-family: "Gilroy" ,sans-serif;
   font-size: 179px;
   font-weight: 700;
