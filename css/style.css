@@ -399,11 +399,11 @@ form.site-search::before {
 }
 
 #slide-switch-2:checked ~ #slide-2 {
-    transform: translate(-1000px);
+    transform: translate(-1020px);
 }
 
 #slide-switch-3:checked ~ #slide-3 {
-    transform: translate(-2000px);
+    transform: translate(-2060px);
 }
 
 .top-slider .slide-features {
