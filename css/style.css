@@ -161,7 +161,7 @@ form.site-search {
 
 form.site-search::before {
   content: '';
-  background-image: url(../img/search.svg);
+  background: url(../img/search.svg) no-repeat;
   width: 16px;
   height: 16px;
   position: absolute;
@@ -208,7 +208,7 @@ form.site-search::before {
 .user-block .enter::before {
   content: '';
   position: absolute;
-  background-image: url(../img/user.svg);
+  background: url(../img/user.svg) no-repeat;
   width: 13px;
   height: 12px;
   top: 0;
@@ -220,7 +220,7 @@ form.site-search::before {
 .user-block .compare::before {
   content: '';
   position: absolute;
-  background-image: url(../img/compare.svg);
+  background: url(../img/compare.svg) no-repeat;
   width: 10px;
   height:10px;
   top: 0;
@@ -232,7 +232,7 @@ form.site-search::before {
 .user-block .cart::before {
   content: '';
   position: absolute;
-  background-image: url(../img/cart.svg);
+  background: url(../img/cart.svg) no-repeat;
   width: 12px;
   height: 12px;
   top: 0;
@@ -479,6 +479,42 @@ form.site-search::before {
   right: 0;
 }
 
+.brands-logos {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.brands-logos a::after {
+    position: relative;
+    width: 260px;
+    height: 100px;
+    background: url(../img/logo-1.png) no-repeat;
+    opacity: 1;
+}
+
+.brands-logos a:nth-child(2) {
+    position: relative;
+    width: 260px;
+    height: 100px;    
+    background: url(../img/logo-3.png) no-repeat;
+}
+
+.brands-logos a:nth-child(3) {
+    position: relative;
+    width: 260px;
+    height: 100px;
+    background: url(../img/logo-4.png) no-repeat;
+}
+
+.brands-logos a:nth-child(4) {
+    position: relative;
+    width: 260px;
+    height: 100px;
+    background: url(../img/logo-5.png) no-repeat;
+}
+
+
 .product-category {
   display: flex;
   justify-content: space-between;
@@ -524,6 +560,20 @@ form.site-search::before {
 
 .contact-inform {
   display: flex;
+  min-height: 560px;
+  justify-content: space-between;
+}
+
+.contact-inform .about-us,
+.contacts-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 460px;
+}
+
+.contact-inform .about-us p {
+    margin-top: -8px;
 }
 
 .slider-services-backroung {
@@ -551,15 +601,55 @@ a.footer-logo {
 
 .footer-user-block {
   display: flex;
+  position: relative;
 }
 
 .footer-user-block .footer-logo {
   margin-right: auto;
 }
 
+.footer-user-block .footer-logo:hover {
+    opacity: 1;
+}
+
+.footer-user-block .enter::before {
+  content: '';
+  position: absolute;
+  background: url(../img/user-f.svg) no-repeat;
+  width: 13px;
+  height: 12px;
+  top: 0;
+  bottom:0;
+  margin: auto;
+  left: 40px;
+}
+.footer-user-block .compare::before {
+  content: '';
+  position: absolute;
+  background: url(../img/compare-f.svg) no-repeat;
+  width: 13px;
+  height: 12px;
+  top: 0;
+  bottom:0;
+  margin: auto;
+  left: 40px;
+}
+.footer-user-block .cart::before {
+  content: '';
+  position: absolute;
+  background: url(../img/cart-f.svg) no-repeat;
+  width: 13px;
+  height: 12px;
+  top: 0;
+  bottom:0;
+  margin: auto;
+  left: 40px;
+}
+
 .footer-user-block .enter,
 .compare, .cart {
   padding-left: 60px;
+  position: relative;
 }
 
 .footer .footer-info {
@@ -573,6 +663,15 @@ a.footer-logo {
   margin-right: auto;
   color: #ffffff;
   font-weight: 300;
+}
+
+.footer-info address::after {
+    content: '';
+    width: 80px;
+    height: 7px;
+    background-color: #ffc600;
+    position: absolute;
+    bottom: 70px;
 }
 
 .footer-info .phone {
@@ -631,10 +730,19 @@ a.footer-logo {
 .footer .social a:last-child {
   margin-left: auto;
   padding-left: -22px;
+  opacity: 1;
 }
 
 .products-catalog {
   padding-left: 120px;
+}
+
+.footer .social a:last-child:hover {
+    opacity: 0.6;
+}
+
+.footer .social a:last-child:active {
+    opacity: 0.3;
 }
 
 /*.products-catalog .total-title {
