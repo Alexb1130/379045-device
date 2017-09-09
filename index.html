@@ -116,7 +116,7 @@
                     правильно!
                 </h1>
                 <p>
-                    Мотивирующие фитнес-браслеты помогут найти в себе силы
+                    Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
                     не пропускать занятия и соблюдать диету.
                 </p>
                  <a href="#" class="global-btn">
@@ -199,20 +199,23 @@
         </section>
         <div class="slider-services-backroung">
             <section class="slider-services container">
+                <input type="radio" id="service-switch-1" name="services-toggle" checked>
+                <input type="radio" id="service-switch-2" name="services-toggle">
+                <input type="radio" id="service-switch-3" name="services-toggle">
                 <ul class="slider-switches">
                     <li>
                         <label for="services-switch-1" class="services-switch">
-                            Доставка<input type="radio" id="service-switch-1" name="services-toggle" checked>
+                            Доставка
                         </label>
                     </li>
                     <li>
                         <label for="services-switch-2" class="services-switch">
-                            Грантия<input type="radio" id="service-switch-2" name="services-toggle">
+                            Грантия
                         </label>
                     </li>
                     <li>
                         <label for="services-switch-3" class="services-switch">
-                            Кредит<input type="radio" id="service-switch-3" name="services-toggle">
+                            Кредит
                         </label>
                     </li>
                 </ul>
@@ -336,7 +339,22 @@
                 </div>
             </div>
         </footer>
-
+		<form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+	    	<label for="name" class="user-name-from">
+	    		Ваше имя
+	    	</label>
+            <label for="email" class="user-mail-form">
+                Ваш e-mail:
+            </label>
+            <input type="text" class="inp-name" id="name" name="name" placeholder="Представтесь, пожалуйста">
+            <input type="text" id="email" name="email" placeholder="Для отправки ответа">
+	    	<label for="letter" class="message-form">
+	    		Текст письма:
+	    	</label>
+            <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
+	    	<button class="global-btn" type="submit">Отправить</button>
+            <button class="popap-close" type="button"></button>
+	    </form>
 
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p> -->
 
