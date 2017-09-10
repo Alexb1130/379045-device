@@ -8,8 +8,8 @@
 
 @font-face {
   font-family: "Gilroy";
-    src: url("../fonts/extrabold.woff2") format("woff2");
-    src: url("../fonts/extrabold.woff") format("woff");
+    src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+    src: url("../fonts/gilroyextrabold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -470,10 +470,11 @@ form.site-search::before {
   content: '';
   display: flex;
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 10px;
+  height: 10px;
   cursor: pointer;
   background: url(../img/slider-button-empty.svg) no-repeat;
+  background-size: 100%;
 }
 
 .top-slider-switches {
@@ -685,12 +686,19 @@ form.site-search::before {
 }
 
 .slider-services {
-  /*display: flex;*/
+  display: flex;
   position: relative;
+  justify-content: space-between;
 }
 
 .service-slide-one p {
   max-width: 426px;
+}
+
+.service-slide-one {
+	position: relative;
+	top: -65px;
+	right: 250px;
 }
 
 .service-slide-two p {
@@ -701,13 +709,20 @@ form.site-search::before {
   max-width: 425px;
 }
 
+.service-slide-two,
+.service-slide-three {
+	display: none;
+}
+
 .service-slide-one::before {
   content: '';
   position: absolute;
   background: url(../img/delivery.svg) no-repeat;
   width: 136px;
   height: 164px;
-  right: 0;
+  height: 164px;
+  right: -200px;
+  top: 48px;
 
 }
 
@@ -768,7 +783,7 @@ form.site-search::before {
 .slider-switches::before {
   content: '';
   width: 7px;
-  height: 319px;
+  height: 230px;
   background-color: #000000;
   position: absolute;
   top: -70px;
@@ -776,7 +791,7 @@ form.site-search::before {
 }
 
 
-#service-switch-1:checked ~ .slider-switches label[for=services-switch-1]::before {
+#service-switch-1:checked ~ .slider-switches label[for=service-switch-1]::before {
   width: 300px;
   height: 40px;
   z-index: -199;
@@ -784,7 +799,7 @@ form.site-search::before {
   background-color: #000000;
 }
 
-#service-switch-1:checked ~ .slider-switches label[for=services-switch-1] {
+#service-switch-1:checked ~ .slider-switches label[for=service-switch-1] {
   color: #f7e184;
 }
 
