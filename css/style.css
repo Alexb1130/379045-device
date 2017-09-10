@@ -502,7 +502,7 @@ form.site-search::before {
 }
 
 .top-slider [type="radio"] {
-  display: none;
+  /*display: none;*/
 }
 
 #slide-switch-1:checked ~ #slide-1 {
