@@ -466,41 +466,39 @@ form.site-search::before {
   min-width: 550px;
 }
 
-.top-slider-switches label {
+.top-slider-switches label::before {
+  content: '';
   display: flex;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 33px 20px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
-  border: 1px solid white;
-  background-color: #cccccc;
-  opacity: 0.3;
+  background: url(../img/slider-button-empty.svg) no-repeat;
 }
 
 .top-slider-switches {
   position: absolute;
-  right: 80px;
-  top: 300px;
+  top: 400px;
+  right: 0;
   display: flex;
   z-index: 10;
   cursor: pointer;
-  right: 0;
 }
 
-#slide-switch-1:checked ~ .top-slider-switches label[for=slide-switch-1] {
-  background-color: #666666;
-  opacity: 1;
+.top-slider-switches li {
+  padding-right: 50px;
 }
 
-#slide-switch-2:checked ~ .top-slider-switches label[for=slide-switch-2] {
-  background-color: #666666;
-  opacity: 1;
+#slide-switch-1:checked ~ .top-slider-switches label[for=slide-switch-1]::before {
+  background: url(../img/slider-button.svg) no-repeat;
 }
 
-#slide-switch-3:checked ~ .top-slider-switches label[for=slide-switch-3] {
-  background-color: #666666;
-  opacity: 1;
+#slide-switch-2:checked ~ .top-slider-switches label[for=slide-switch-2]::before {
+  background: url(../img/slider-button.svg) no-repeat;
+}
+
+#slide-switch-3:checked ~ .top-slider-switches label[for=slide-switch-3]::before {
+  background: url(../img/slider-button.svg) no-repeat;
 }
 
 .top-slider [type="radio"] {
