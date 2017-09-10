@@ -102,6 +102,17 @@ a.logo {
   min-height: 185px;
 }
 
+.cataqlog-header a.logo:hover,
+.catalog-footer a.footer-logo:hover {
+  opacity: 0.7;
+}
+
+.cataqlog-header a.logo:active,
+.catalog-footer a.footer-logo:active {
+  opacity: 0.4;
+}
+
+
 ul {
   margin: 0;
   padding: 0;
@@ -115,7 +126,7 @@ form.site-search button, input {
 }
 
 form.site-search button {
-  padding:13px 17px;
+  padding:11px 17px;
   border: 2px solid #000000;
   font-weight: 300;
   margin-left: -5px;
@@ -139,6 +150,11 @@ form.site-search input {
   font-weight: 300;
   padding-left: 30px;
   width: 310px;
+}
+
+form.site-search input:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 form.site-search input:focus {
@@ -1105,7 +1121,7 @@ a.footer-logo {
   height: 2px;
   background-color: #000000;
   position: absolute;
-  top:30px;
+  bottom: 175px;
 }
 
 .range-title::after {
@@ -1313,7 +1329,7 @@ input[type="radio"] + label {
   height: 2px;
   background-color: #000000;
   position: absolute;
-  top:30px;
+  bottom: 120px;
 }
 
 .left-filter .filter-bluetooth {
@@ -1393,36 +1409,40 @@ input[type="radio"] + label {
   position: absolute;
   border: none;
   background: none;
+  display: inline-block;
+  width: 200px;
   display: none;
 }
 
 .item-img-box .global-btn {
   top: 50%;
   z-index: 1;
-  left:30%;
+  left: 90px;
 }
 
 .item-img-box .global-btn:before {
-  content:"";
+  content: "";
   position: absolute;
   background-color: #f0c52e;
-  width: 200px;
+  width: 100%;
   height: 8px;
   z-index: -1;
-  top:7px;
-  left: -27px ;
+  top: 8px;
+  left: -3px;
   transition: .2s;
 }
 
 .item-img-box .global-btn:hover::before {
   height: 40px;
-  top:-8px;
+  top:0;
+  bottom: 0;
+  margin: auto;
 }
 
 .item-img-box .add-btn {
   top: 60%;
   z-index: 1;
-  left:29%;
+  left:25%;
   color: #000000;
   font-family: "Open Sans";
   font-size: 13px;
