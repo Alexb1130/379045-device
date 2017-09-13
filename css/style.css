@@ -66,7 +66,6 @@ body {
 }
 
 .container {
-  width: 85%;
   max-width: 1160px;
   margin: auto;
 }
@@ -405,7 +404,7 @@ a:active {
 
   box-sizing: border-box;
   width: 1160px;
-  min-height: 130px;
+  min-height: 154px;
 
   content: '';
 
@@ -516,7 +515,7 @@ a:active {
   display: flex;
   flex-direction: column;
 
-  padding-right: 50px;
+  padding-right: 79px;
 
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -688,26 +687,14 @@ a:active {
   padding-right: 34px;
 }
 
-#slide-switch-1:checked~.top-slider-switches label[for=slide-switch-1]::before {
-  background: url(../img/slider-button.svg) no-repeat;
-}
-
-#slide-switch-2:checked~.top-slider-switches label[for=slide-switch-2]::before {
-  background: url(../img/slider-button.svg) no-repeat;
-}
-
+#slide-switch-1:checked~.top-slider-switches label[for=slide-switch-1]::before,
+#slide-switch-2:checked~.top-slider-switches label[for=slide-switch-2]::before,
 #slide-switch-3:checked~.top-slider-switches label[for=slide-switch-3]::before {
   background: url(../img/slider-button.svg) no-repeat;
 }
 
-#slide-switch-1:checked~#slide-1 {
-  display: flex;
-}
-
-#slide-switch-2:checked~#slide-2 {
-  display: flex;
-}
-
+#slide-switch-1:checked~#slide-1,
+#slide-switch-2:checked~#slide-2,
 #slide-switch-3:checked~#slide-3 {
   display: flex;
 }
@@ -719,8 +706,8 @@ a:active {
   display: -ms-flexbox;
   display: flex;
 
-  margin: 100px auto;
-
+  margin: 125px auto;
+  margin-bottom: 100px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -858,12 +845,13 @@ a:active {
 
 .slider-services-backroung {
   background-color: #e5e5e5;
+  position: relative;
+  top: 23px;
 }
 
 .slider-switches {
-  margin: 0;
+  margin: -20px 0 112px 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -884,21 +872,31 @@ a:active {
 .service-slide-one {
   position: relative;
   top: -65px;
-  right: 250px;
+  right: 332px;
 }
 
-.service-slide-one p {
-  max-width: 426px;
+.service-slide-two {
+  position: absolute;
+  top: -65px;
+  right: 332px;
 }
 
-.service-slide-two p {
-  max-width: 436px;
+.service-slide-three {
+  position: absolute;
+  top: -65px;
+  right: 332px;
 }
 
+.service-slide-one p,
+.service-slide-two p,
 .service-slide-three p {
-  max-width: 425px;
+  max-width: 426px;
+  letter-spacing: 0.15px;
+  line-height: 30px;
+  margin-top: -5px;
 }
 
+.service-slide-one,
 .service-slide-two,
 .service-slide-three {
   display: none;
@@ -907,10 +905,9 @@ a:active {
 .service-slide-one::before {
   position: absolute;
   top: 48px;
-  right: -200px;
+  right: -266px;
 
   width: 136px;
-  height: 164px;
   height: 164px;
 
   content: '';
@@ -920,7 +917,8 @@ a:active {
 
 .service-slide-two::before {
   position: absolute;
-  right: 0;
+  right: -286px;
+  top: 26px;
 
   width: 171px;
   height: 194px;
@@ -932,7 +930,8 @@ a:active {
 
 .service-slide-three::before {
   position: absolute;
-  right: 0;
+  right: -262px;
+  top: 26px;
 
   width: 156px;
   height: 184px;
@@ -952,8 +951,7 @@ a:active {
 
   display: inline-block;
 
-  width: 160px;
-  padding: 10px 0;
+  width: 172px;
 
   cursor: pointer;
   text-align: center;
@@ -962,6 +960,12 @@ a:active {
 
   color: #000;
 }
+
+.slider-switches label {
+	margin-bottom: 28px;
+	margin-top: 11px;
+}
+
 
 .slider-switches label::before {
   position: absolute;
@@ -988,29 +992,40 @@ a:active {
 
 .slider-switches::before {
   position: absolute;
-  top: -70px;
-  left: 300px;
+  top: -98px;
+  left: 277px;
 
   width: 7px;
-  height: 230px;
+  height: 318px;
 
   content: '';
 
   background-color: #000;
 }
 
-#service-switch-1:checked~.slider-switches label[for=service-switch-1]::before {
+#service-switch-1:checked~.slider-switches label[for=service-switch-1]::before,
+#service-switch-2:checked~.slider-switches label[for=service-switch-2]::before,
+#service-switch-3:checked~.slider-switches label[for=service-switch-3]::before {
   position: absolute;
   z-index: -199;
 
-  width: 300px;
+  width: 280px;
   height: 40px;
 
   background-color: #000;
+  transition: none;
 }
 
-#service-switch-1:checked~.slider-switches label[for=service-switch-1] {
+#service-switch-1:checked~.slider-switches label[for=service-switch-1],
+#service-switch-2:checked~.slider-switches label[for=service-switch-2],
+#service-switch-3:checked~.slider-switches label[for=service-switch-3] {
   color: #f7e184;
+}
+
+#service-switch-1:checked~#delivery,
+#service-switch-2:checked~#warranty,
+#service-switch-3:checked~#credit {
+	display: block;
 }
 
 .contact-inform {
@@ -1037,7 +1052,7 @@ a:active {
   flex-direction: column;
 
   max-width: 460px;
-  margin-bottom: 50px;
+  margin-bottom: 87px;
 
   color: #464646;
 
@@ -1050,7 +1065,7 @@ a:active {
 }
 
 .about-us ul {
-  margin: 0;
+  margin: 40px 0 0 0;
   padding: 0;
 
   list-style: none;
@@ -1063,7 +1078,7 @@ a:active {
 
   position: relative;
 
-  padding: 10px 0;
+  padding: 9px 0;
   padding-left: 25px;
 }
 
@@ -1088,14 +1103,14 @@ a:active {
   margin-top: 0;
 }
 
-.map img {
-  max-width: 100%;
+.contacts-map {
+	margin-right: 101px;
 }
 
 .about-us h1::before,
 .contacts-map h1::before {
   position: absolute;
-  top: 0;
+  top: -15px;
 
   width: 80px;
   height: 7px;
@@ -1110,7 +1125,7 @@ a:active {
   font-size: 17px;
 
   width: 260px;
-  margin-top: 50px;
+  margin-top: 60px;
 
   text-align: center;
 }
@@ -1963,7 +1978,7 @@ input[type='radio']+label {
 .footer {
   position: relative;
 
-  padding: 50px 0;
+  padding: 75px 0;
 
   background-color: #464646;
 }
@@ -2019,7 +2034,7 @@ input[type='radio']+label {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 40px;
+  left: 45px;
 
   width: 13px;
   height: 12px;
@@ -2050,7 +2065,7 @@ input[type='radio']+label {
 .cart {
   position: relative;
 
-  padding-left: 60px;
+  padding-left: 65px;
 }
 
 .footer .footer-info {
@@ -2069,17 +2084,18 @@ input[type='radio']+label {
   font-weight: 300;
   font-style: normal;
 
-  margin-right: auto;
+  margin-right: 167px;
 
   color: #fff;
 }
 
 .footer-info address::after {
   position: absolute;
-  bottom: 70px;
+  bottom: 97px;
 
   width: 80px;
   height: 7px;
+  left: 380px;
 
   content: '';
 
@@ -2129,6 +2145,7 @@ input[type='radio']+label {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .footer .social a:nth-child(2) {
@@ -2152,7 +2169,7 @@ input[type='radio']+label {
 }
 
 .footer .social a:last-child {
-  margin-left: auto;
+  margin-left: 485px;
 
   opacity: 1;
 }
