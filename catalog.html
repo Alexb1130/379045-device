@@ -95,61 +95,63 @@
                     </div>
                 </section>
             </div>
-            <div class="main-flex">
-                <form action="#" method="post" class="left-filter">
-                    <fieldset class="range-title">
-                        <legend>Стоимость</legend>
-                        <div class="range-filter">
-                            <div class="range-controls">
-                                <div class="scale"></div>
-                                <div class="bar"></div>
-                                <div class="toggle toggle-min"></div>
-                                <div class="toggle toggle-max"></div>
+            <div class="main-flex container">
+                <div class="left-filter-bgr-background">
+                    <form action="https://echo.htmlacademy.ru" method="post" class="left-filter">
+                        <fieldset class="range-title">
+                            <legend>Стоимость</legend>
+                            <div class="range-filter">
+                                <div class="range-controls">
+                                    <div class="scale"></div>
+                                    <div class="bar"></div>
+                                    <div class="toggle toggle-min"></div>
+                                    <div class="toggle toggle-max"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="price-controls">
-                            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-                        </div>
-                    </fieldset>
-                    <fieldset class="filter-colors">
-                        <legend>Цвет</legend>
-                        <input type="checkbox" id="black" name="black-item" checked>
-                        <label for="black">
-                            Черный
-                        </label>
-                        <input type="checkbox" id="white" name="white-item">
-                        <label for="white">
-                            Белый
-                        </label>
-                        <input type="checkbox" id="blue" name="blue-item"> 
-                        <label for="blue">
-                            Синий
-                        </label>
-                        <input type="checkbox" id="red" name="red-item">
-                        <label for="red">
-                             Красный
-                        </label>
-                        <input type="checkbox" id="pink" name="pink-item">
-                        <label for="pink">
-                             Розовый
-                        </label>
-                    </fieldset>
-                    <fieldset class="filter-bluetooth">
-                        <legend>Bluetooth</legend>
-                        <input type="radio" id="yes" name="radio" checked> 
-                        <label for="yes">
-                                Есть
-                        </label>
-                        <input type="radio" id="no" name="radio" checked>
-                        <label for="no">
-                                Нет
-                        </label>
-                    </fieldset>
-                    <button type="button" class="global-btn">
-                        Показать
-                    </button>
-                </form>
+                            <div class="price-controls">
+                                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="filter-colors">
+                            <legend>Цвет</legend>
+                            <input type="checkbox" id="black" name="black-item" checked>
+                            <label for="black">
+                                Черный
+                            </label>
+                            <input type="checkbox" id="white" name="white-item">
+                            <label for="white">
+                                Белый
+                            </label>
+                            <input type="checkbox" id="blue" name="blue-item"> 
+                            <label for="blue">
+                                Синий
+                            </label>
+                            <input type="checkbox" id="red" name="red-item">
+                            <label for="red">
+                                 Красный
+                            </label>
+                            <input type="checkbox" id="pink" name="pink-item">
+                            <label for="pink">
+                                 Розовый
+                            </label>
+                        </fieldset>
+                        <fieldset class="filter-bluetooth">
+                            <legend>Bluetooth</legend>
+                            <input type="radio" id="yes" name="radio" checked> 
+                            <label for="yes">
+                                    Есть
+                            </label>
+                            <input type="radio" id="no" name="radio" checked>
+                            <label for="no">
+                                    Нет
+                            </label>
+                        </fieldset>
+                        <button type="submit" class="global-btn">
+                            Показать
+                        </button>
+                    </form>
+                </div>
                 <section class="products-ls">
                     <article class="products-item">
                         <div class="item-img-box">
@@ -159,7 +161,9 @@
                         </div>
                          <div class="item-name">
                             <h3 class="item-title">
-                                Любительская селфи-палка
+                                <a href="product.html" target="_blank">
+                                    Любительская селфи-палка
+                                </a>
                             </h3>
                             <span class="item-price">500р</span>
                         </div>
@@ -172,8 +176,10 @@
                         </div>
                         <div class="item-name">
                             <h3 class="item-title">
-                                Профессиональная<br>
-                                селфи-палка
+                                <a href="product.html" target="_blank">
+                                    Профессиональная<br>
+                                    селфи-палка
+                                </a>
                             </h3>
                             <span class="item-price">1500р</span>
                         </div>
@@ -186,7 +192,9 @@
                         </div>
                         <div class="item-name">
                             <h3 class="item-title">
-                                Непотопляемая селфи-палка
+                                <a href="product.html" target="_blank">
+                                    Непотопляемая селфи-палка
+                                </a>
                             </h3>
                             <span class="item-price">2 500 руб.</span>
                         </div>
@@ -199,8 +207,10 @@
                         </div>
                         <div class="item-name">
                             <h3 class="item-title">
-                                Селфи-палка «Следуй<br>
-                                за мной»
+                                <a href="product.html" target="_blank">
+                                    Селфи-палка «Следуй<br>
+                                    за мной»
+                                </a>
                             </h3>
                             <span class="item-price">4 900 руб.</span>
                         </div>
